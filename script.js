@@ -1,8 +1,24 @@
 var timerEl = document.getElementById('timer');
 
+var playersScore = [];
+var questionEl = document.createElement("div");
+questionEl.textContent = "What is JavaScript?";
+questionEl.appendChild(listEl);
 
-function countdown() {
-  var timeLeft = 75;
+function generateQuiz() {
+    playersScore = [];
+
+
+
+}
+
+
+startQuizBtn.addEventListener("click", startQuiz);
+
+
+function countdown(event) {
+    var timeLeft = 75;
+    // event.preventDefault();
   var timeInterval = setInterval(function () {
     if (timeLeft > 1) {
       timerEl.textContent = timeLeft + ' seconds remaining';
@@ -19,23 +35,4 @@ function countdown() {
     }
   }, 1000);
 }
-
-// Displays the message one word at a time
-function displayMessage() {
-  var wordCount = 0;
-
-  // Uses the `setInterval()` method to call a function to be executed every 1000 milliseconds
-  var msgInterval = setInterval(function () {
-    // If there are no more words left in the message
-    if (words[wordCount] === undefined) {
-      // Use `clearInterval()` to stop the timer
-      clearInterval(msgInterval);
-    } else {
-      // Display one word of the message
-      mainEl.textContent = words[wordCount];
-      wordCount++;
-    }
-  }, 1000);
-}
-
 countdown();
