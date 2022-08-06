@@ -1,0 +1,21 @@
+:root{
+    display: block;
+    background: #f9e7e7;
+    color: #7d938a;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 1px black solid;
+    padding: 10px 50px 20px;
+}
+div.intro {
+    color:black;
+
+}
+
+button {
+    color: #ffffff;
+    font-size: x-large;
+    background: #7d938a;
+    padding: 20px;
+}
+
