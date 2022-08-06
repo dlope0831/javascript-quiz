@@ -1,9 +1,8 @@
-var timerEl = document.getElementById('start-quiz');
+var timerEl = document.getElementById('timer');
 
 
 function countdown() {
   var timeLeft = 75;
-
   var timeInterval = setInterval(function () {
     if (timeLeft > 1) {
       timerEl.textContent = timeLeft + ' seconds remaining';
