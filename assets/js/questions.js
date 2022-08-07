@@ -8,7 +8,7 @@ const myQuestions =[
             ,"All of the above"
         ],
         "correct":3
-    };
+    },
     {
         "question": "What is not a JavaScript Data Types?",
         "answers": [
@@ -18,7 +18,7 @@ const myQuestions =[
             ,"Boolean"
         ],
         "correct":2
-    };
+    },
     {
         "question": "What are all the looping structures in JavaScript?",
         "answers": [
@@ -28,7 +28,7 @@ const myQuestions =[
             ,"All of the above"
         ],
         "correct":3
-    };
+    },
     {
         "question": "What are the scopes of a variable in JavaScript?",
         "answers": [
