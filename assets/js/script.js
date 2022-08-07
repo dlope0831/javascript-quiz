@@ -1,18 +1,21 @@
 var timerEl = document.getElementById('timer');
+var startQuizBtn = document.getElementById ('start-quiz');
 
 var playersScore = [];
-var questionEl = document.createElement("div");
-questionEl.textContent = "What is JavaScript?";
-questionEl.appendChild(listEl);
+var correctAnswers =["a","b","c","d"];
+// var myQuestions =[""];
 
-function generateQuiz() {
+function startQuiz() {
     playersScore = [];
-
-
+    
+    }
+function allQuestions() {
 
 }
 
+function allAnswers () {
 
+}
 startQuizBtn.addEventListener("click", startQuiz);
 
 
@@ -23,11 +26,11 @@ function countdown(event) {
     if (timeLeft > 1) {
       timerEl.textContent = timeLeft + ' seconds remaining';
       timeLeft--;
-    } // TODO: Add comments describing the functionality of the `else if` statement:
+    }
     else if (timeLeft === 1) {
       timerEl.textContent = timeLeft + ' second remaining';
       timeLeft--;
-    } // TODO: Add comments describing the functionality of the `else` statement:
+    } 
     else {
       timerEl.textContent = '';
       clearInterval(timeInterval);

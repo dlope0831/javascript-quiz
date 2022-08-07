@@ -8,15 +8,24 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header> 
-        <h1>JavaScript Quiz</h1>
-    </header>
-    <div class="intro"> This timed quiz to asses your JavaScript knowledge. At the end, you will be able to view your score amongst your peers. Good luck!</div>
-    <br>
-    <div class="timer" div id="timer">Ready, Set, Go!</div>
-    <div class="btn" div id="generate-quiz"> <button type="button">Start Quiz!</button> </div>
-
+    <div class ="outer-container">
+      <div class="center-container"></div>
+        <div id ="interface">
+          <h1>JavaScript Quiz</h1>
+          <h3>This timed quiz to asses your JavaScript knowledge. At the end, you will be able to view your score amongst your peers. Good luck!</h3>
+        </div>
+        <div id="timer">Ready, Set, Go!</div>
+        <br>
+        <button onClick="startQuiz()">Start Quiz!</button>
+        </div>
+        <div id="right-or-wrong">
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./script.js"></script>
   </body>
 
 </html>
+
+
