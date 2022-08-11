@@ -1,4 +1,4 @@
-const myQuestions =[
+var allQuestions =[
     {
         "question": "What are all types of Pop up boxes available in JavaScript?",
         "answers": [

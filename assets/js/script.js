@@ -2,7 +2,7 @@ var timerEl = document.getElementById('timer');
 var startQuizBtn = document.getElementById ('start-quiz');
 
 var playersScore = [];
-var correctAnswers =["a","b","c","d"];
+// var correctAnswers =["a","b","c","d"];
 // var myQuestions =[""];
 
 function startQuiz() {
