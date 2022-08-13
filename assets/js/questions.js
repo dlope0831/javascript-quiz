@@ -1,4 +1,4 @@
-var allQuestions =[
+var myQuestions =[
     {
         "question": "What are all types of Pop up boxes available in JavaScript?",
         "answers": [
@@ -35,6 +35,7 @@ var allQuestions =[
             "International Variables"
             ,"Global Variables"
             ,"Local Varaiables"
+            ,"Yes"
         ],
         "correct":0
     }
