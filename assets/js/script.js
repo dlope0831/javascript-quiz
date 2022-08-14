@@ -31,26 +31,6 @@ function allQuestions() {
     <button class="possible-answer" onClick="handleUserAnswer(2)">${thisQuestion.answers[2]}</ button>
     <button class="possible-answer" onClick="handleUserAnswer(3)">${thisQuestion.answers[3]}</ button>
   </div>`
-//   var htmlToAdd = [];
-
-//   htmlToAdd.push("<div>")
-//   htmlToAdd.push(`<h3>${thisQuestion.question}</h3>`);
-//   for (var i = 0; i < thisQuestion.answers.length; i++){
-//     console.log(thisQuestion.answers[i]);
-//     htmlToAdd.push(`<button class="possible-answer" onClick="handleUserAnswer(${i})">${thisQuestion.answers[i]}</ on>`);
-//   }
-// htmlToAdd.push("</div>");
-// if (currentQuestion == 0){
-//     console.log("htmlToAdd", htmlToAdd);
-// }
-
-
-// var htmlToDisplay = htmlToAdd.join("").trim();
-
-
-// if (currentQuestion == 0){
-//     console.log("htmlToDisplay (after join)", htmlToDisplay);
-// }
 
 interfaceDisplay.innerHTML = replacement;
 }
@@ -85,5 +65,16 @@ function stopQuiz(){
 
 clearInterval(timer);
 
-interfaceDisplay.innerHTML = "End of Quiz!";
+interfaceDisplay.innerHTML = `<div> End of Quiz!<br> <input type = "text" id="userInfo"> <br><button onClick= "saveScore()">Submit</button></div>`;
+}
+function saveScore(){
+  var userInfo = document.getElementById("userInfo").value
+  console.log(userInfo)
+  var currentScore = JSON.parse(localStorage.getItem("playersScore")) || [];
+  console.log(currentScore)
+  currentScore.push({
+    name: userInfo,
+    score: timeLeft,
+  })
+  localStorage.setItem("playersScore", JSON.stringify(currentScore));
 }
